@@ -1,0 +1,45 @@
+/*reset*/
+@charset "utf-8";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{ font-weight: normal;}
+li { list-style: none; }
+i{font-style: normal;}
+img { border: none; }
+input,
+select,
+textarea { outline: none; border: none; background: none; border-radius: 0;
+  -webkit-border-radius: 0;
+  -webkit-appearance: none;
+  background-image: -webkit-linear-gradient(transparent, transparent);
+  background-image: linear-gradient(transparent, transparent);
+  font-family:"Helvetica", "Arial";
+}
+textarea { resize: none; }
+html { -webkit-text-size-adjust:none;overflow-x:hidden;}
+article,aside,details,figcaption,figure,footer, header, hgroup, menu, nav,section { display: block; }
+img { display: block; max-width: 100%; height:auto;}
+.video embed, .video object,.video iframe { width: 100%; height: auto; }
+a { border:0; text-decoration: none; outline: none;}
+a,button,input{-webkit-tap-highlight-color:rgba(255,0,0,0);}
+em{ font-style: normal;}
+
+.clearfix:after,
+.clearfix:before { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+page {min-width:300px; background-color: #f8f8f8; color:#030000;overflow-x:hidden;}
+page{font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial,
+"Microsoft YaHei", FreeSans, Arimo, "Droid Sans",
+"wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3",
+FontAwesome, sans-serif;}
+
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100rpx 0;
+  box-sizing: border-box;
+}

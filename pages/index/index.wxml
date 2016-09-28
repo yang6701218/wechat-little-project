@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<template name="staffName">
+ <view>
+    <text> {{index}}: {{msg}} </text>
+    Time: {{time}}
+  </view>
+</template>
+<include src="../component/header.wxml"/>
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <div wx:for-items="{{array}}">{{item}}</div>
+  <template is="staffName" data="{{...item}}"></template>
+</view>
+

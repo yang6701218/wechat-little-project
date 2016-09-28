@@ -1,0 +1,35 @@
+
+      .login_box{
+        padding: 15px;
+       }
+       .login_box input{    	
+       	 display: inline-block;
+       	 width: 100%;
+         height: 36px;
+       	 font-size: 20px;
+       	 line-height: .7rem;
+       	 border-bottom: 1px solid #d4d4d4
+       }
+      .login_box #pwd{    	
+      	margin-top: .55rem;
+       }
+       .go_reg {
+          font-size:12px;
+          margin:24px 0px;
+          color: #a8a8a8;
+       }
+       .reg_btn {
+          color: #4bd16f;
+          text-decoration: underline;
+       }
+       .login-btn{
+       	display: inline-block;
+       	min-width: 100%;
+       	height: 44px;
+       	font-size: 16px;
+       	background: #0dc441;
+       	line-height: 44px;
+       	text-align: center;
+       	color: #fff;
+       	border-radius: .24rem;
+       }
