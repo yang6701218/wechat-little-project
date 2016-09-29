@@ -29,6 +29,8 @@ Page({
     })
   },
   bindPwd:function(){
-
+    this.setData({
+      pwd:e.detail.value
+    })
   }
 })
