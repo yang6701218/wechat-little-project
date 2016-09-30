@@ -1,4 +1,2 @@
 <!--可以定义公共的模板，并且在那个页面使用的，就可以使用那个页面的data里面的数据-->
-<view>
-<div class="header">我是{{header}}</div>
-</view>
+<view class="header">我是{{header}}</view>

@@ -1,7 +1,8 @@
 {
   "pages":[
+        "pages/index/index",
     "pages/login/login",
-    "pages/index/index",
+
     "pages/logs/logs"
   ],
   "window":{
@@ -10,5 +11,21 @@
     "navigationBarTitleText": "WeChat01",
     "navigationBarTextStyle":"black"
   },
-  "debug": true
+  "debug": true,
+  "tabBar": {
+    "color":"blue",
+    "selectedColor":"red",
+    "borderStyle":"white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath":"pages/component/boy.png",
+      "selectedIconPath":"pages/component/girl.png"
+    }, {
+      "pagePath": "pages/login/login",
+      "text": "登陆",
+      "iconPath":"pages/component/girl.png",
+      "selectedIconPath":"pages/component/boy.png"
+    }]
+  }
 }

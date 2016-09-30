@@ -43,3 +43,8 @@ FontAwesome, sans-serif;}
   padding: 100rpx 0;
   box-sizing: border-box;
 }
+
+.header{
+  background: orangered;
+  width: 20rem;
+}

@@ -23,18 +23,24 @@ Page({
     },
     header:'首页'
   },
-  //事件处理函数 处理页面通过bindtap绑定的  bind与catch的区别是后者会阻止冒泡
-  bindViewTap: function() {
+  //事件处理函数 处理页面通过bind+事件名绑定的  bind与catch的区别是后者会阻止冒泡
+  bindViewTap: function(event) {
     //wx.navigateTo({
      // url: '../logs/logs'
    // })
    //跟vue一样 data里面的属性都是相应的，在组件内通过this调用
-   console.log(this.data.motto);
-   commom.sayHello('Young');
+   console.log(event.currentTarget.dataset);
+   //this.setData({
+    //  motto:"小学生放假了了！"
+   //})
+  
+  },
+  onHide:function(){
+     console.log("不要离开我！")
   },
   //onload:页面加载的时候执行的钩子函数
   onLoad: function (options) {
-    console.log(options.id)
+    //console.log(options.id)
     var that = this
   	//调用应用实例的方法获取全局数据
     app.getUserInfo(function(userInfo){
