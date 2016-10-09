@@ -8,7 +8,7 @@
    <view class="nav_item {{pageActive==1?'active':''}}" data-index="1">足球美女</view>
    <view class="nav_item {{pageActive==2?'active':''}}" data-index="2">足球生活</view>
 </view>
-<swiper duration="{{durTime}}" bindchange="swiperChange" current="{{pageActive}}">
+<swiper duration="{{durTime}}" bindchange="swiperChange" current="{{pageActive}}" style="height:410px">
    <!--生活-->
     <swiper-item>
        <scroll-view class="scrollView" scroll-y="true" style="height: {{scrollViewHeight}}px;" bindscroll="scroll" scroll-into-view="blue" scroll-top="10">
@@ -25,6 +25,37 @@
                </view>
                <view class="scroll-view-text">我们都爱小丸子</view>
             </view>
+              <view class="scroll-view-item">
+               <view class="scroll-view-img">
+                  <image src="http://localhost:8080/assets/img/img2.png"></image>
+               </view>
+               <view class="scroll-view-text">我们都爱小丸子</view>
+            </view>
+              <view class="scroll-view-item">
+               <view class="scroll-view-img">
+                  <image src="http://localhost:8080/assets/img/img2.png"></image>
+               </view>
+               <view class="scroll-view-text">我们都爱小丸子</view>
+            </view>
+              <view class="scroll-view-item">
+               <view class="scroll-view-img">
+                  <image src="http://localhost:8080/assets/img/img2.png"></image>
+               </view>
+               <view class="scroll-view-text">我们都爱小丸子</view>
+            </view>
+              <view class="scroll-view-item">
+               <view class="scroll-view-img">
+                  <image src="http://localhost:8080/assets/img/img2.png"></image>
+               </view>
+               <view class="scroll-view-text">我们都爱小丸子</view>
+            </view>
+              <view class="scroll-view-item">
+               <view class="scroll-view-img">
+                  <image src="http://localhost:8080/assets/img/img2.png"></image>
+               </view>
+               <view class="scroll-view-text">我们都爱小丸子</view>
+            </view>
+            
        </scroll-view>
     </swiper-item>
      <!--美女-->
