@@ -67,3 +67,6 @@ text{
     color:darkblue;
     text-align: center
 }
+.marginLeft0{
+  margin-right: 0;
+}

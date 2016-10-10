@@ -4,9 +4,10 @@ Page({
     durTime:500,
     pageActive:0,
     scrollViewHeight:400,
+    mr:'marginLeft0',
     liveList:[],
     womanList:[],
-    liveList:[]
+    leftList:[]
   },
   onLoad:function(options){
     // 页面初始化 options为页面跳转所带来的参数
@@ -29,16 +30,19 @@ Page({
        pageActive:index
      })
   },
-  getList:function(index){
+  getList:function(index,list){
      var index =  index | 0;
+     var that = this;
      wx.request({
-         url:'http://10.7.186.101:8080/api/getList',
-         data:{},
-         complete:function(){
-             
-         },
-         success:function(){
+         url:'http://10.7.158.62:8080/api/listLive',
+         data:{index:index},
+         complete:function(res){
            
+         },
+         success:function(res){
+             that.setData({
+                 liveList:res.data
+             });
          }
      });
   }

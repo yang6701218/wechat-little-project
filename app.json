@@ -11,7 +11,7 @@
     "navigationBarTitleText": "WeChat01",
     "navigationBarTextStyle":"white"
   },
-  "debug": true,
+  "debug": false,
   "tabBar": {
     "color":"blue",
     "selectedColor":"red",
