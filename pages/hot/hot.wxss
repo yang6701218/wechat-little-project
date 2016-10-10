@@ -42,7 +42,7 @@ text{
 }
 .nav_item.active{
     color: #0dc441;
-    border-bottom: 5px solid #0dc441
+    border-bottom: 3px solid #0dc441
 }
 .scrollView{
     display: flex;
@@ -52,7 +52,8 @@ text{
     float: left;
     width: 9.7rem;
     border: 1px solid #aaa;
-    height: auto
+    height: auto;
+    margin-right: 0.2rem;
 }
 .scroll-view-img{
    height:10rem ; 
