@@ -1,4 +1,5 @@
 var commom = require('../common.js');
+var app = getApp()
 Page({
   data:{
     // text:"这是一个页面"
@@ -20,20 +21,21 @@ Page({
   },
   goLogin:function(){
     if(!commom.phone(this.data.phone)){
-       this.setData({
-          toastHidden:false,
-          errorMsg:"手机格式错误"
+       wx.showToast({
+         title:'你的号码对么？',
+         icon:'loading',
+         duration:1500
        });
        return
     }
-     wx.request({
-         url:'http://10.7.186.101:8080/api/login',
+     wx.request({ //发请求
+         url : app.globalData.url+'/api/login',
          data:{phone:this.data.phone,pwd:this.data.pwd},
          complete:function(){
              console.log(11)
          },
          success:function(){
-            wx.navigateTo({url:'/pages/index/index?id=11121'})
+            wx.redirectTo({url:'/pages/index/index?id=11121'})
          }
      });
      //console.log(this.data.phone);

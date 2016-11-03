@@ -34,7 +34,7 @@ Page({
      var index =  index | 0;
      var that = this;
      wx.request({
-         url:'http://10.7.158.62:8080/api/listLive',
+         url:'http://10.7.156.200:8080/api/listLive',
          data:{index:index},
          complete:function(res){
            

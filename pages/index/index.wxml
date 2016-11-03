@@ -7,7 +7,7 @@
 </template>
 
 <include src="../component/header.wxml"/>
-<view class="container">
+<view class="container" animation="{{animationData}}">
   <text>{{motto}}</text>  
   <view  bindtap="bindViewTap" class="userinfo" data-user-id="CD1603">
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>

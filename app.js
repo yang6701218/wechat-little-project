@@ -31,6 +31,7 @@ App({
   },
   //全局的自定义配置数据，在其他地方可以使用app.js的实例获取
   globalData:{
-    userInfo:null
+    userInfo:null,
+    url:'http://10.7.156.200:8080'
   }
 })

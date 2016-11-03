@@ -1,8 +1,6 @@
 <view class="login_box">
-        <input type="text" id="telephone" placeholder="手机号" value="{{user.phone}}" bindinput="bindPhone"/>
-        <input type="password" id="pwd" placeholder="密码" value="{{user.pwd}}" bindinput="bindPwd"/>
+        <input type="text" id="telephone" placeholder="手机号" value="{{phone}}" bindinput="bindPhone"/>
+        <input type="password" id="pwd" placeholder="密码" value="{{pwd}}" bindinput="bindPwd"/>
         <view class="go_reg">没有账号？点击立即<a href="register.html" class="reg_btn">注册</a></view>
         <button type="primary" bindtap="goLogin" class="login-btn"> 提 交 </button>
-        <toast hidden="{{toastHidden}}" bindchange="toastChange" duration='1500'>{{errorMsg}}
-        </toast>
 </view>

@@ -21,7 +21,33 @@ Page({
       msg: 'this template',
       time: '2016-09-23'
     },
-    header:'首页'
+    header:'首页',
+    animationData:null
+  },
+  onReady:function(){
+  
+  },
+  onShow:function(){
+    var animation = wx.createAnimation({ //页面之间切换是没有动画设置的
+      duration: 1000,
+      timingFunction: 'ease',
+    })
+
+    this.animation = animation
+    //设置初始状态
+    animation.scale(2, 2).step();
+
+    this.setData({
+      animationData:animation.export()
+    })
+
+    setTimeout(function() {
+      //设置结束状态，这样才有动画
+      animation.scale(1).step()
+      this.setData({
+        animationData:animation.export()
+      })
+    }.bind(this), 1000)
   },
   //事件处理函数 处理页面通过bind+事件名绑定的  bind与catch的区别是后者会阻止冒泡
   bindViewTap: function(event) {

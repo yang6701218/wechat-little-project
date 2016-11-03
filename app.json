@@ -1,8 +1,8 @@
 {
   "pages":[
+    "pages/login/login",
     "pages/hot/hot",
     "pages/index/index",
-    "pages/login/login",
     "pages/logs/logs"
   ],
   "window":{
@@ -19,11 +19,6 @@
     "list": [{
       "pagePath": "pages/index/index",
       "text": "首页",
-      "iconPath":"pages/component/girl.png",
-      "selectedIconPath":"pages/component/boy.png"
-    }, {
-      "pagePath": "pages/login/login",
-      "text": "登陆",
       "iconPath":"pages/component/girl.png",
       "selectedIconPath":"pages/component/boy.png"
     },{
